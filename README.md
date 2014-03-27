@@ -1,4 +1,4 @@
-sponsor-pay-offers
+SponsorPay Offers
 ==================
 
-Sponsor Pay Offers
+A challenge project for SponsorPay.

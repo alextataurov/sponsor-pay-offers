@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B2B8B2D18E0E69800095B5A /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2B8B2C18E0E69800095B5A /* NSString+Hash.m */; };
+		8B2B8B3018E0E7BE00095B5A /* Offer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2B8B2F18E0E7BE00095B5A /* Offer.m */; };
+		8B2B8B3618E0EB6F00095B5A /* OffersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2B8B3518E0EB6F00095B5A /* OffersViewController.m */; };
+		8B79820818E1DDE2000D61F3 /* OfferAPIClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B79820718E1DDE2000D61F3 /* OfferAPIClientTests.m */; };
+		8B79820A18E1E80C000D61F3 /* OfferTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B79820918E1E80C000D61F3 /* OfferTests.m */; };
+		8B79820C18E1E860000D61F3 /* OffersJSONExample.json in Resources */ = {isa = PBXBuildFile; fileRef = 8B79820B18E1E860000D61F3 /* OffersJSONExample.json */; };
+		8B79820E18E213F2000D61F3 /* EnterCredentialsViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B79820D18E213F2000D61F3 /* EnterCredentialsViewControllerTests.m */; };
+		8B79821318E2A43D000D61F3 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B79821218E2A43D000D61F3 /* libOCMock.a */; };
+		8B965D0418E13F0C000F00B4 /* OfferTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B965D0318E13F0C000F00B4 /* OfferTableViewCell.m */; };
+		8B965D0618E13F43000F00B4 /* OfferTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B965D0518E13F43000F00B4 /* OfferTableViewCell.xib */; };
+		8BB0F18A18E09EDA008776A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BB0F18918E09EDA008776A9 /* Foundation.framework */; };
+		8BB0F18C18E09EDA008776A9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BB0F18B18E09EDA008776A9 /* CoreGraphics.framework */; };
+		8BB0F18E18E09EDA008776A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BB0F18D18E09EDA008776A9 /* UIKit.framework */; };
+		8BB0F19418E09EDB008776A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8BB0F19218E09EDB008776A9 /* InfoPlist.strings */; };
+		8BB0F19618E09EDB008776A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB0F19518E09EDB008776A9 /* main.m */; };
+		8BB0F19A18E09EDB008776A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB0F19918E09EDB008776A9 /* AppDelegate.m */; };
+		8BB0F19D18E09EDB008776A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BB0F19B18E09EDB008776A9 /* Main.storyboard */; };
+		8BB0F1A018E09EDB008776A9 /* EnterCredentialsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB0F19F18E09EDB008776A9 /* EnterCredentialsViewController.m */; };
+		8BB0F1A218E09EDB008776A9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BB0F1A118E09EDB008776A9 /* Images.xcassets */; };
+		8BB0F1AA18E09EDB008776A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BB0F18918E09EDA008776A9 /* Foundation.framework */; };
+		8BB0F1AB18E09EDB008776A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BB0F18D18E09EDA008776A9 /* UIKit.framework */; };
+		8BB0F1B318E09EDC008776A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8BB0F1B118E09EDC008776A9 /* InfoPlist.strings */; };
+		8BB0F1C518E0CE52008776A9 /* NSString+Conveniences.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB0F1C418E0CE52008776A9 /* NSString+Conveniences.m */; };
+		8BE6397918E3274800267719 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BE6397818E3274800267719 /* XCTest.framework */; };
+		8BE6397C18E3322300267719 /* OfferAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE6397B18E3322300267719 /* OfferAPIClient.m */; };
+		8BE6397F18E3523C00267719 /* XCTestCase+AsyncTesting.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE6397E18E3523C00267719 /* XCTestCase+AsyncTesting.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8BB0F1AC18E09EDB008776A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BB0F17E18E09EDA008776A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BB0F18518E09EDA008776A9;
+			remoteInfo = SponsorPayOffers;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8B2B8B2B18E0E69800095B5A /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
+		8B2B8B2C18E0E69800095B5A /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
+		8B2B8B2E18E0E7BE00095B5A /* Offer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Offer.h; sourceTree = "<group>"; };
+		8B2B8B2F18E0E7BE00095B5A /* Offer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Offer.m; sourceTree = "<group>"; };
+		8B2B8B3418E0EB6F00095B5A /* OffersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OffersViewController.h; sourceTree = "<group>"; };
+		8B2B8B3518E0EB6F00095B5A /* OffersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OffersViewController.m; sourceTree = "<group>"; };
+		8B79820718E1DDE2000D61F3 /* OfferAPIClientTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfferAPIClientTests.m; sourceTree = "<group>"; };
+		8B79820918E1E80C000D61F3 /* OfferTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfferTests.m; sourceTree = "<group>"; };
+		8B79820B18E1E860000D61F3 /* OffersJSONExample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = OffersJSONExample.json; sourceTree = "<group>"; };
+		8B79820D18E213F2000D61F3 /* EnterCredentialsViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterCredentialsViewControllerTests.m; sourceTree = "<group>"; };
+		8B79821218E2A43D000D61F3 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = usr/lib/libOCMock.a; sourceTree = "<group>"; };
+		8B965D0218E13F0C000F00B4 /* OfferTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfferTableViewCell.h; sourceTree = "<group>"; };
+		8B965D0318E13F0C000F00B4 /* OfferTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfferTableViewCell.m; sourceTree = "<group>"; };
+		8B965D0518E13F43000F00B4 /* OfferTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OfferTableViewCell.xib; sourceTree = "<group>"; };
+		8BB0F18618E09EDA008776A9 /* SponsorPayOffers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SponsorPayOffers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BB0F18918E09EDA008776A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8BB0F18B18E09EDA008776A9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8BB0F18D18E09EDA008776A9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8BB0F19118E09EDA008776A9 /* SponsorPayOffers-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SponsorPayOffers-Info.plist"; sourceTree = "<group>"; };
+		8BB0F19318E09EDB008776A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8BB0F19518E09EDB008776A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8BB0F19718E09EDB008776A9 /* SponsorPayOffers-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SponsorPayOffers-Prefix.pch"; sourceTree = "<group>"; };
+		8BB0F19818E09EDB008776A9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8BB0F19918E09EDB008776A9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8BB0F19C18E09EDB008776A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8BB0F19E18E09EDB008776A9 /* EnterCredentialsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnterCredentialsViewController.h; sourceTree = "<group>"; };
+		8BB0F19F18E09EDB008776A9 /* EnterCredentialsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EnterCredentialsViewController.m; sourceTree = "<group>"; };
+		8BB0F1A118E09EDB008776A9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8BB0F1A718E09EDB008776A9 /* SponsorPayOffersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SponsorPayOffersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BB0F1B018E09EDC008776A9 /* SponsorPayOffersTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SponsorPayOffersTests-Info.plist"; sourceTree = "<group>"; };
+		8BB0F1B218E09EDC008776A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8BB0F1C318E0CE52008776A9 /* NSString+Conveniences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Conveniences.h"; sourceTree = "<group>"; };
+		8BB0F1C418E0CE52008776A9 /* NSString+Conveniences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Conveniences.m"; sourceTree = "<group>"; };
+		8BE6397818E3274800267719 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8BE6397A18E3322300267719 /* OfferAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfferAPIClient.h; sourceTree = "<group>"; };
+		8BE6397B18E3322300267719 /* OfferAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfferAPIClient.m; sourceTree = "<group>"; };
+		8BE6397D18E3523C00267719 /* XCTestCase+AsyncTesting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XCTestCase+AsyncTesting.h"; sourceTree = "<group>"; };
+		8BE6397E18E3523C00267719 /* XCTestCase+AsyncTesting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XCTestCase+AsyncTesting.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8BB0F18318E09EDA008776A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BB0F18C18E09EDA008776A9 /* CoreGraphics.framework in Frameworks */,
+				8BB0F18E18E09EDA008776A9 /* UIKit.framework in Frameworks */,
+				8BB0F18A18E09EDA008776A9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BB0F1A418E09EDB008776A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BE6397918E3274800267719 /* XCTest.framework in Frameworks */,
+				8B79821318E2A43D000D61F3 /* libOCMock.a in Frameworks */,
+				8BB0F1AB18E09EDB008776A9 /* UIKit.framework in Frameworks */,
+				8BB0F1AA18E09EDB008776A9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8BB0F17D18E09EDA008776A9 = {
+			isa = PBXGroup;
+			children = (
+				8BB0F18F18E09EDA008776A9 /* SponsorPayOffers */,
+				8BB0F1AE18E09EDB008776A9 /* SponsorPayOffersTests */,
+				8BB0F18818E09EDA008776A9 /* Frameworks */,
+				8BB0F18718E09EDA008776A9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8BB0F18718E09EDA008776A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BB0F18618E09EDA008776A9 /* SponsorPayOffers.app */,
+				8BB0F1A718E09EDB008776A9 /* SponsorPayOffersTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8BB0F18818E09EDA008776A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BE6397818E3274800267719 /* XCTest.framework */,
+				8B79821218E2A43D000D61F3 /* libOCMock.a */,
+				8BB0F18918E09EDA008776A9 /* Foundation.framework */,
+				8BB0F18B18E09EDA008776A9 /* CoreGraphics.framework */,
+				8BB0F18D18E09EDA008776A9 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8BB0F18F18E09EDA008776A9 /* SponsorPayOffers */ = {
+			isa = PBXGroup;
+			children = (
+				8BB0F1C218E0CE20008776A9 /* Categories */,
+				8BB0F1BE18E0CA05008776A9 /* Library */,
+				8BB0F19E18E09EDB008776A9 /* EnterCredentialsViewController.h */,
+				8BB0F19F18E09EDB008776A9 /* EnterCredentialsViewController.m */,
+				8B965D0218E13F0C000F00B4 /* OfferTableViewCell.h */,
+				8B965D0318E13F0C000F00B4 /* OfferTableViewCell.m */,
+				8B965D0518E13F43000F00B4 /* OfferTableViewCell.xib */,
+				8B2B8B3418E0EB6F00095B5A /* OffersViewController.h */,
+				8B2B8B3518E0EB6F00095B5A /* OffersViewController.m */,
+				8BB0F19B18E09EDB008776A9 /* Main.storyboard */,
+				8BB0F19818E09EDB008776A9 /* AppDelegate.h */,
+				8BB0F19918E09EDB008776A9 /* AppDelegate.m */,
+				8BB0F1A118E09EDB008776A9 /* Images.xcassets */,
+				8BB0F19018E09EDA008776A9 /* Supporting Files */,
+			);
+			path = SponsorPayOffers;
+			sourceTree = "<group>";
+		};
+		8BB0F19018E09EDA008776A9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8BB0F19118E09EDA008776A9 /* SponsorPayOffers-Info.plist */,
+				8BB0F19218E09EDB008776A9 /* InfoPlist.strings */,
+				8BB0F19518E09EDB008776A9 /* main.m */,
+				8BB0F19718E09EDB008776A9 /* SponsorPayOffers-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8BB0F1AE18E09EDB008776A9 /* SponsorPayOffersTests */ = {
+			isa = PBXGroup;
+			children = (
+				8BE6397D18E3523C00267719 /* XCTestCase+AsyncTesting.h */,
+				8BE6397E18E3523C00267719 /* XCTestCase+AsyncTesting.m */,
+				8B79820B18E1E860000D61F3 /* OffersJSONExample.json */,
+				8B79820718E1DDE2000D61F3 /* OfferAPIClientTests.m */,
+				8B79820918E1E80C000D61F3 /* OfferTests.m */,
+				8B79820D18E213F2000D61F3 /* EnterCredentialsViewControllerTests.m */,
+				8BB0F1AF18E09EDC008776A9 /* Supporting Files */,
+			);
+			path = SponsorPayOffersTests;
+			sourceTree = "<group>";
+		};
+		8BB0F1AF18E09EDC008776A9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8BB0F1B018E09EDC008776A9 /* SponsorPayOffersTests-Info.plist */,
+				8BB0F1B118E09EDC008776A9 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8BB0F1BE18E0CA05008776A9 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				8B2B8B2E18E0E7BE00095B5A /* Offer.h */,
+				8B2B8B2F18E0E7BE00095B5A /* Offer.m */,
+				8BE6397A18E3322300267719 /* OfferAPIClient.h */,
+				8BE6397B18E3322300267719 /* OfferAPIClient.m */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		8BB0F1C218E0CE20008776A9 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				8BB0F1C318E0CE52008776A9 /* NSString+Conveniences.h */,
+				8BB0F1C418E0CE52008776A9 /* NSString+Conveniences.m */,
+				8B2B8B2B18E0E69800095B5A /* NSString+Hash.h */,
+				8B2B8B2C18E0E69800095B5A /* NSString+Hash.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8BB0F18518E09EDA008776A9 /* SponsorPayOffers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BB0F1B818E09EDC008776A9 /* Build configuration list for PBXNativeTarget "SponsorPayOffers" */;
+			buildPhases = (
+				8BB0F18218E09EDA008776A9 /* Sources */,
+				8BB0F18318E09EDA008776A9 /* Frameworks */,
+				8BB0F18418E09EDA008776A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SponsorPayOffers;
+			productName = SponsorPayOffers;
+			productReference = 8BB0F18618E09EDA008776A9 /* SponsorPayOffers.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8BB0F1A618E09EDB008776A9 /* SponsorPayOffersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BB0F1BB18E09EDC008776A9 /* Build configuration list for PBXNativeTarget "SponsorPayOffersTests" */;
+			buildPhases = (
+				8BB0F1A318E09EDB008776A9 /* Sources */,
+				8BB0F1A418E09EDB008776A9 /* Frameworks */,
+				8BB0F1A518E09EDB008776A9 /* Resources */,
+				8B79821618E2BA36000D61F3 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BB0F1AD18E09EDB008776A9 /* PBXTargetDependency */,
+			);
+			name = SponsorPayOffersTests;
+			productName = SponsorPayOffersTests;
+			productReference = 8BB0F1A718E09EDB008776A9 /* SponsorPayOffersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8BB0F17E18E09EDA008776A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Alex Tataurov";
+				TargetAttributes = {
+					8BB0F1A618E09EDB008776A9 = {
+						TestTargetID = 8BB0F18518E09EDA008776A9;
+					};
+				};
+			};
+			buildConfigurationList = 8BB0F18118E09EDA008776A9 /* Build configuration list for PBXProject "SponsorPayOffers" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8BB0F17D18E09EDA008776A9;
+			productRefGroup = 8BB0F18718E09EDA008776A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8BB0F18518E09EDA008776A9 /* SponsorPayOffers */,
+				8BB0F1A618E09EDB008776A9 /* SponsorPayOffersTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8BB0F18418E09EDA008776A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B965D0618E13F43000F00B4 /* OfferTableViewCell.xib in Resources */,
+				8BB0F1A218E09EDB008776A9 /* Images.xcassets in Resources */,
+				8BB0F19418E09EDB008776A9 /* InfoPlist.strings in Resources */,
+				8BB0F19D18E09EDB008776A9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BB0F1A518E09EDB008776A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BB0F1B318E09EDC008776A9 /* InfoPlist.strings in Resources */,
+				8B79820C18E1E860000D61F3 /* OffersJSONExample.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8B79821618E2BA36000D61F3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BB0F18218E09EDA008776A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B2B8B2D18E0E69800095B5A /* NSString+Hash.m in Sources */,
+				8BB0F1A018E09EDB008776A9 /* EnterCredentialsViewController.m in Sources */,
+				8BB0F1C518E0CE52008776A9 /* NSString+Conveniences.m in Sources */,
+				8BB0F19A18E09EDB008776A9 /* AppDelegate.m in Sources */,
+				8B2B8B3618E0EB6F00095B5A /* OffersViewController.m in Sources */,
+				8B965D0418E13F0C000F00B4 /* OfferTableViewCell.m in Sources */,
+				8BB0F19618E09EDB008776A9 /* main.m in Sources */,
+				8BE6397C18E3322300267719 /* OfferAPIClient.m in Sources */,
+				8B2B8B3018E0E7BE00095B5A /* Offer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BB0F1A318E09EDB008776A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B79820A18E1E80C000D61F3 /* OfferTests.m in Sources */,
+				8B79820818E1DDE2000D61F3 /* OfferAPIClientTests.m in Sources */,
+				8BE6397F18E3523C00267719 /* XCTestCase+AsyncTesting.m in Sources */,
+				8B79820E18E213F2000D61F3 /* EnterCredentialsViewControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8BB0F1AD18E09EDB008776A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BB0F18518E09EDA008776A9 /* SponsorPayOffers */;
+			targetProxy = 8BB0F1AC18E09EDB008776A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8BB0F19218E09EDB008776A9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BB0F19318E09EDB008776A9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8BB0F19B18E09EDB008776A9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BB0F19C18E09EDB008776A9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8BB0F1B118E09EDC008776A9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BB0F1B218E09EDC008776A9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8BB0F1B618E09EDC008776A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8BB0F1B718E09EDC008776A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8BB0F1B918E09EDC008776A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SponsorPayOffers/SponsorPayOffers-Prefix.pch";
+				INFOPLIST_FILE = "SponsorPayOffers/SponsorPayOffers-Info.plist";
+				PRODUCT_NAME = SponsorPayOffers;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8BB0F1BA18E09EDC008776A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SponsorPayOffers/SponsorPayOffers-Prefix.pch";
+				INFOPLIST_FILE = "SponsorPayOffers/SponsorPayOffers-Info.plist";
+				PRODUCT_NAME = SponsorPayOffers;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8BB0F1BC18E09EDC008776A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SponsorPayOffers.app/SponsorPayOffers";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SponsorPayOffers/SponsorPayOffers-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_UNDECLARED_SELECTOR = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/usr/include\"",
+				);
+				INFOPLIST_FILE = "SponsorPayOffersTests/SponsorPayOffersTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/usr/lib",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-force_load",
+					"\"$(SRCROOT)/usr/lib/libOCMock.a\"",
+					"-ObjC",
+				);
+				PRODUCT_NAME = SponsorPayOffersTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		8BB0F1BD18E09EDC008776A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SponsorPayOffers.app/SponsorPayOffers";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SponsorPayOffers/SponsorPayOffers-Prefix.pch";
+				GCC_WARN_UNDECLARED_SELECTOR = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/usr/include\"",
+				);
+				INFOPLIST_FILE = "SponsorPayOffersTests/SponsorPayOffersTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/usr/lib",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-force_load",
+					"\"$(SRCROOT)/usr/lib/libOCMock.a\"",
+					"-ObjC",
+				);
+				PRODUCT_NAME = SponsorPayOffersTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8BB0F18118E09EDA008776A9 /* Build configuration list for PBXProject "SponsorPayOffers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BB0F1B618E09EDC008776A9 /* Debug */,
+				8BB0F1B718E09EDC008776A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BB0F1B818E09EDC008776A9 /* Build configuration list for PBXNativeTarget "SponsorPayOffers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BB0F1B918E09EDC008776A9 /* Debug */,
+				8BB0F1BA18E09EDC008776A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BB0F1BB18E09EDC008776A9 /* Build configuration list for PBXNativeTarget "SponsorPayOffersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BB0F1BC18E09EDC008776A9 /* Debug */,
+				8BB0F1BD18E09EDC008776A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8BB0F17E18E09EDA008776A9 /* Project object */;
+}
